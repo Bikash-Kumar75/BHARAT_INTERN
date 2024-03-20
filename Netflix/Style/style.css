@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #ffff;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( 20deg, rgba(0, 0, 0, 0.707), rgba(0, 0, 0, 0.773)), url(../Assets/images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0.8rem 8%;
+    position: relative;
+}
+
+
+/* ===================NAV SECTION================ */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+}
+
+.logo {
+    width: 145px;
+    cursor: pointer;
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #ffff;
+    padding: 0.3rem 1.1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border-radius: 4px;
+    margin-left: 0.7rem;
+    cursor: pointer;
+}
+
+.language-btn {
+    align-items: center;
+    background: #12121285;
+    border: 1px solid #fff;
+    padding: 0.3rem 0.9rem;
+}
+
+.down-logo {
+    width: 10px;
+    margin-left: 0.7rem;
+}
+
+.lan-logo {
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+
+/* ================HEADER-SECTION=================== */
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.header-content h1 {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    max-width: 650px;
+}
+
+.header-content h3 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 1.3rem;
+    margin-top: 0.8rem;
+}
+
+.header-content p {
+    font-size: 0.9rem;
+}
+
+.email-signup {
+    align-items: center;
+    margin-top: 1.1rem;
+}
+
+.email-signup input {
+    border: 0;
+    outline: 0;
+    margin-left: 1.2rem;
+    padding: 0.9rem 3rem;
+    border-radius: 4px;
+    background: transparent;
+    border: 0.5px solid #a5a4a4;
+    color: #ffff;
+    background-color: #18181875;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.email-signup button {
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.95rem 1.5rem;
+    margin-left: 0.45rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.bar-line {
+    width: 100%;
+    height: 5px;
+    background: #630a25;
+}
+
+
+/* ========================FEATURE-SECTION======================== */
+
+.features {
+    margin: 0 auto;
+    padding: 4.9rem 9.2rem;
+}
+
+.plan-container {
+    background: linear-gradient(120deg, #451a30, #240a25);
+    padding: 2rem 0;
+    border-radius: 15px;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+    color: #f1e9e9;
+}
+
+.plan-container:hover {
+    transform: scale(1.04);
+    background: linear-gradient(120deg, #4c1b32, #2c0e27);
+    color: #ffff;
+}
+
+.plan-heading {
+    text-align: start;
+    padding-left: 3rem;
+}
+
+.plan-para {
+    text-align: start;
+    padding-left: 3rem;
+}
+
+
+/* =======================JOIN-SECTION========================= */
+
+.join-heading {
+    text-align: start;
+    padding-left: 0.5rem;
+    margin-top: 4.2rem;
+}
+
+.join-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.join-card {
+    background: linear-gradient(120deg, #291b4c, #290c24);
+    border-radius: 15px;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+}
+
+.join-card:hover {
+    background: linear-gradient(120deg, #2a1c4f, #381031);
+}
+
+.card-heading {
+    padding: 1rem 0.2rem;
+    text-align: start;
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.card-para {
+    text-align: start;
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.icon {
+    width: 6rem;
+    height: 4.5rem;
+    margin-top: 2rem;
+}
+
+.icon-2 {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-top: 1.7rem;
+}
+
+.icon-3 {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1rem;
+}
+
+
+/* <!-- ======================FAQ=========================== --> */
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 2.3rem;
+}
+
+.faq-heading {
+    margin-top: 1.2rem;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.accordion li {
+    list-style: none;
+    width: 130%;
+    padding: 1.2px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 1.8rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 2rem;
+    position: absolute;
+    right: 1.2rem;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 1.1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 1.2rem 1.1rem;
+}
+
+.accordion input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+.unknow {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 4.1rem;
+    padding-left: 1.3rem;
+}
+
+.faq input {
+    padding: 0.9rem 16.2rem;
+    background-color: #6c6d6f24;
+}
+
+
+/* =======================FOOTER========================= */
+
+.footer {
+    margin: 0 auto;
+    padding: 1rem 2.8rem;
+}
+
+.footer h2 {
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #c2bebe;
+}
+
+.cont {
+    color: #c2bebe;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 8.5rem;
+    margin-top: 3.2rem;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.col a {
+    color: #c2bebe;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.footer-language-btn {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(62, 61, 61, 0.141);
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 0.3rem 0.9rem;
+    color: #ffff;
+    font-size: medium;
+}
+
+.footer-btn {
+    margin-top: 3.9rem;
+}
+
+.footer-btn h3 {
+    margin-top: 2.5rem;
+    color: #c2bebe;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+/* ================================MEDEA-QUERY========================== */
+
+@media only screen and (max-width: 600px) {
+    /* nav- section */
+    .logo {
+        width: 95px;
+        margin-left: -0.8rem;
+    }
+    .nav-btn {
+        display: flex;
+    }
+    .language-btn {
+        padding: 0 0.7rem;
+        font-size: 0.8rem;
+        height: 2rem;
+    }
+    .language-btn span {
+        display: none;
+    }
+    .sign {
+        padding: 0 0.7rem;
+        font-size: 0.9rem;
+        height: 2rem;
+    }
+    /* hero-section */
+    .header-content {
+        position: unset;
+        transform: none;
+        padding-top: 5.5rem;
+    }
+    .header-content h1 {
+        font-size: 1.850rem;
+        font-weight: 600;
+        line-height: 3rem;
+    }
+    .header-content h3 {
+        font-size: 1rem;
+        margin-top: 0.4rem;
+    }
+    .header-content p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .email-signup {
+        margin-bottom: -3rem;
+    }
+    .email-signup input {
+        margin-left: 0;
+        padding: 0.7rem 1.8rem;
+    }
+    .email-signup button {
+        padding: 0.7rem 1.2rem;
+        margin-top: 1rem;
+    }
+    /* feature-section */
+    .join-card {
+        height: 32vh;
+    }
+    .features {
+        margin: 4rem auto;
+        padding: 0 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .plan-container {
+        width: 20rem;
+        height: 10rem;
+    }
+    .plan-heading {
+        font-size: 1.3rem;
+        margin: 0 auto;
+        padding: 0.2rem 1.5rem;
+    }
+    .plan-para {
+        font-size: 0.9rem;
+        margin-top: 1rem;
+        margin: 0 auto;
+        padding: 0.2rem 1.5rem;
+    }
+    .join-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* margin-top: 1rem; */
+        gap: 0.7rem;
+    }
+    /* faq */
+    .accordion li label {
+        font-size: 1.2rem;
+        font-weight: 400;
+        height: 4.2rem;
+    }
+    .accordion li {
+        width: 98%;
+    }
+    .unknow {
+        padding-left: 0;
+    }
+    .footer h2 {
+        margin-top: 5rem;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: start;
+        margin-left: -0.980rem;
+    }
+    /* footer */
+    .row {
+        display: grid;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .col {
+        gap: 1rem;
+    }
+}
